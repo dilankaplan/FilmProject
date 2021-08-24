@@ -26,10 +26,13 @@ function addFilm(e){
     }
     else{
         const newFilm =new Film(title,director,url);
-        UI.displayMessages("Film başarıyla eklendi","success")
-        Storage.addFilmToStorage(newFilm);
-
         UI.addFilmToUI(newFilm);
+        Storage.addFilmToStorage(newFilm);
+        
+        UI.displayMessages("Film başarıyla eklendi","success")
+       
+
+        
     }
     UI.clearInputs(titleElement,directorElement,urlElement);
 

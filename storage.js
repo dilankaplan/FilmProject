@@ -8,7 +8,7 @@ class Storage{
       static getFilmFromStorage(){
           let films;
           if(localStorage.getItem("films")=== null){
-               films=[];
+               films= [];
           }
           else{
               films=JSON.parse(localStorage.getItem("films"));
